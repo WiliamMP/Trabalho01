@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Titulo</title>
+</head>
+<script type="text/javascript">
+	function minhafuncao(){
+		//alert("1");
+
+		// var nome = document.getElementById("nome").value;
+		var linguagem_selecionada = document.getElementById("linguagem").value;
+
+		//
+		// console.log(" minha mensagem aqui ....");
+		//
+		debugger;
+	}
+</script>
+<body>
+    <header>
+<!--        meu header-->
+    </header>
+    <main>
+<!--        meu main-->
+<div style="
+
+	/*display:grid;*/
+	/*align-items: center;*/
+	/*align-content: center;*/
+
+	/*display: inline;*/
+	display: block;
+	/*display: none;*/
+	font-size:35px;
+	color:red;">
+	<form action="cadastrar.php" method="post" >
+		<label>Nome</label>
+		<input type="text" id="nome" name="nome">
+		<br>
+		<label>Sobrenome</label>
+		<input maxlength="5" size="40" type="text" id="sobrenome" name="sobrenome">
+
+		<br>
+		<label>Idade</label>
+		<input type="text" id="idade" name="idade">
+
+		<br>
+		<label>Usuário</label>
+		<input type="text" id="usuario" name="usuario">
+
+		<br>
+		<label>Senha</label>
+		<input size="25" type="password" id="senha" name="senha">
+
+		<br>
+		<label>Deseja receber atualizações?</label>
+		<input style="width: 30px;height: 20px" type="checkbox" id="atualizacao" name="atualizacao">
+
+<!--		<label>Deseja receber atualizações anual?</label>-->
+<!--		<input style="width: 30px;height: 20px" type="checkbox" id="atualizacao" name="atualizacao">-->
+
+<!--		<label>Deseja receber atualizações mensal?</label>-->
+<!--		<input style="width: 30px;height: 20px" type="checkbox" id="atualizacao" name="atualizacao">-->
+
+		<br>
+		<br>
+		<br>
+		<label>Sexo:</label>
+		<br>
+		Masculino<input type="radio" name="sexo" value="1" />
+		<br>
+		Feminino<input type="radio" name="sexo" value="2"/>
+		<br>
+		Prefiro não informar<input type="radio" name="sexo" value="3"/>
+
+		<br>
+		<input type="submit" value="Enviar">
+
+<!--		<input type="reset" value="Limpar">-->
+
+		<input type="hidden" name="status_login"
+			   value="usuariologado123">
+		<br><br>
+<!--exemplo de select-->
+		<label for="linguagem">Linguagem</label>
+		<select id="linguagem">
+			<option value="44" selected>Selecione...</option>
+			<option value="1">C</option>
+			<option value="2">C++</option>
+			<option value="3">PHP</option>
+		</select>
+
+		<br><br>
+		<input type="button"
+			   name="botao clicar"
+			   value="Chama js"
+			   onclick="minhafuncao()">
+	</form>
+	
+</div>
+	</main>
+    <footer></footer>
+</body>
+</html>
